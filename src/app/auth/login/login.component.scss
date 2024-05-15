@@ -1,0 +1,29 @@
+@import "../../../assets/scss/variablesSCSS/variables", "../../../assets/scss/mixinsSCSS/mixins";
+.formulario {
+    @include forms;
+    a {
+        text-decoration: none;
+        &:hover {
+            border: none;
+            padding: 5px;
+            box-shadow: 0 0 3px 0 red;
+        }
+    }
+}
+.formulario_image {
+    height: 100%;
+}
+
+.formulario_login {
+    @include formsContent;
+}
+.formulario_logo {
+    @include formLogo;
+}
+.formulario_login_username,
+.formulario_login_password {
+    @include formsBoxes;
+}
+.formulario_login_button_btn {
+    @include ButtonPrimary;
+}

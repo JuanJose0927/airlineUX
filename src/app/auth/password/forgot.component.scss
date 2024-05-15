@@ -1,0 +1,13 @@
+@import "../../../assets/scss/mixinsSCSS/mixins";
+@import "../../../assets/scss/variablesSCSS/variables";
+
+.forgotPasword_formulario {
+    @include formsContent;
+    margin-top: 30px;
+}
+.forgotPasword_formulario_box{
+    @include formsBoxes;
+}
+.forgotPasword_formulario_button_btn{
+    @include ButtonPrimary;
+}

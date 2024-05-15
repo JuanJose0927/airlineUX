@@ -1,72 +1,29 @@
 @import "../../../assets/scss/variablesSCSS/variables";
+@import "../../../assets/scss/mixinsSCSS/mixins";
+
 .formulario {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    a{
-        text-decoration: none;
-        &:hover{
-            border: none;
-            padding: 5px;
-            box-shadow:  0 0 3px 0 red;
-        }
-    }
+    @include forms;
 }
 .formulario_image {
-    width: 50%;
     height: 100%;
 }
 
-.formulario_login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    box-shadow: 2px 10px 7px 5px $colorPrimary;
-    border-radius: 20px;
-    img{
+.formulario_register {
+    @include formsContent;
+    img {
         height: 100px;
     }
-}
+} 
 .formulario_logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
+    @include formLogo;
 }
-.formulario_login_username,
-.formulario_login_password {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    input {
-        padding: 3px;
-        border: 2px solid $colorPrimary;
-        border-radius: 20px;
-    }
+.formulario_register_name,
+.formulario_register_identification,
+.formulario_register_email,
+.formulario_register_password,
+.formulario_register_repeatpassword {
+    @include formsBoxes;
 }
-.formulario_login_button_btn{
-    padding: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: $colorPrimary;
-    border-radius: 10px;
-    border: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin-top: 12px;
-    &:hover {
-        background-color: #fff;
-        color: $colorHover;
-        border: 2px solid $colorHover;
-        box-shadow: 5px 5px 0px $colorHover;
-    }
+.formulario_register_button_btn {
+    @include ButtonPrimary;
 }
