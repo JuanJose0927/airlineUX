@@ -5,7 +5,7 @@
         <h3>Europa</h3>
         <div class="sections_destinations_box" *ngFor="let destination of  destinationsEuropa">
             <p>{{destination.nombre}}</p>
-            <p>{{destination.curency}}</p>
+            <p>Currency = {{destination.curency}}</p>
             <img [src]="destination.image" [alt]="" width="233px">
         </div>
     </section>
@@ -13,23 +13,23 @@
         <h3>America</h3>
         <div class="sections_destinations_box" *ngFor="let destination of  destinationsAmerica">
             <p>{{destination.nombre}}</p>
-            <p>{{destination.curency}}</p>
+            <p>Currency = {{destination.curency}}</p>
             <img [src]="destination.image" [alt]="" width="233px">
         </div>
     </section>
     <section id="asia">
         <h3>Asia</h3>
-        <div class="sections_destinations_box" *ngFor="let destination of  destinationsEuropa">
+        <div class="sections_destinations_box" *ngFor="let destination of  destinationsAsia">
             <p>{{destination.nombre}}</p>
-            <p>{{destination.curency}}</p>
+            <p> Currency = {{destination.curency}}</p>
             <img [src]="destination.image" [alt]="" width="233px">
         </div>
     </section>
     <section id="africa">
         <h3>Africa</h3>
-        <div class="sections_destinations_box" *ngFor="let destination of  destinationsEuropa">
-            <p>{{destination.nombre}}</p>
-            <p>{{destination.curency}}</p>
+        <div class="sections_destinations_box" *ngFor="let destination of  Africa">
+            <p> {{destination.nombre}}</p>
+            <p>Currency = {{destination.curency}}</p>
             <img [src]="destination.image" [alt]="" width="233px">
         </div>
     </section>

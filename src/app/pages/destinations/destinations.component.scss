@@ -17,15 +17,15 @@
     border-radius: 20px;
     box-shadow: 10px 4px 20px 2px blue;
     img {
-        width: 233px;
+        width: inherit;
         height: 130px;
     }
 }
-section{
+section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    h3{
+    h3 {
         text-align: center;
     }
 }
