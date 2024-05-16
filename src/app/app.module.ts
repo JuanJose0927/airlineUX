@@ -11,6 +11,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FirstpartComponent } from './pages/home/firstpart/firstpart.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { DestinationsComponent } from './pages/destinations/destinations.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FirstpartComponent } from './pages/home/firstpart/firstpart.component';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    FirstpartComponent
+    FirstpartComponent,
+    AboutComponent,
+    ContactComponent,
+    DestinationsComponent,
   ],
   imports: [
     BrowserModule,

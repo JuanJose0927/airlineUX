@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="sections_destinatios">
+    <h1>Destinations</h1>
+    <section id="europa">
+        <h3>Europa</h3>
+        <div class="sections_destinations_box" *ngFor="let destination of  destinationsEuropa">
+            <p>{{destination.nombre}}</p>
+            <p>{{destination.curency}}</p>
+            <img [src]="destination.image" [alt]="" width="233px">
+        </div>
+    </section>
+    <section id="america">
+        <h3>America</h3>
+        <div class="sections_destinations_box" *ngFor="let destination of  destinationsAmerica">
+            <p>{{destination.nombre}}</p>
+            <p>{{destination.curency}}</p>
+            <img [src]="destination.image" [alt]="" width="233px">
+        </div>
+    </section>
+    <section id="asia">
+        <h3>Asia</h3>
+        <div class="sections_destinations_box" *ngFor="let destination of  destinationsEuropa">
+            <p>{{destination.nombre}}</p>
+            <p>{{destination.curency}}</p>
+            <img [src]="destination.image" [alt]="" width="233px">
+        </div>
+    </section>
+    <section id="africa">
+        <h3>Africa</h3>
+        <div class="sections_destinations_box" *ngFor="let destination of  destinationsEuropa">
+            <p>{{destination.nombre}}</p>
+            <p>{{destination.curency}}</p>
+            <img [src]="destination.image" [alt]="" width="233px">
+        </div>
+    </section>
+</div>
